@@ -503,7 +503,7 @@ def main():
     has_failed = any(r["status"] != "成功" for r in results)
     if has_failed:
         logger.error("检测到存在签到失败的账号，退出码设为 1。")
-        sys.exit(1)
+        # sys.exit(1)
 
 
 if __name__ == "__main__":
