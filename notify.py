@@ -28,9 +28,9 @@ def send_wecom(webhook: str, title: str, content: str):
             f"--------------------------------"
         )
     payload = {
-        "msgtype": "text",
-        "text": {
-            "content": text_content
+        "msg_type": "text",
+        "content": {
+            "text": text_content
         }
     }
 
